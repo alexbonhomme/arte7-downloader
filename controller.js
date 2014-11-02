@@ -14,7 +14,7 @@ angular.module('ArteHack', [])
     $scope.params.video_lang = 'VF';
     $scope.params.text_lang = 'F';
 
-    $scope.arte_url = 'http://www.arte.tv/guide/fr/051485-005/360-geo?autoplay=1';
+    $scope.arte_url = '';
 
     $scope.video_url = '';
     $scope.video_title = '';

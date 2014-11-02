@@ -50,17 +50,26 @@
     <div class="container" id="main">
       <form role="form">
         <div class="row">
-          
-          <div class="col-md-offset-1 col-md-7">
+
+          <div id="alert" class="col-md-offset-1 col-md-10"></div>
+
+          <div class="col-md-offset-1 col-md-6">
             <div class="form-group">
-              <input type="url" class="form-control" id="arte-url" placeholder="Enter Arte.tv URL" ng-model="arte_url">
+              <input type="url" class="form-control" id="arte-url" placeholder="Enter Arte.tv URL" ng-model="arte_url" required>
             </div>
           </div>
           
           <div class="col-md-1">
+            <select class="form-control" ng-model="video_lang">
+              <option value="VF">VF</option>
+              <option value="VA">VA</option>
+            </select>
+          </div>
+
+          <div class="col-md-1">
             <select class="form-control" ng-model="video_quality">
               <option value="SQ">HD</option>
-              <option value="EQ">MD</option>
+              <option value="EQ">SD</option>
             </select>
           </div>
 

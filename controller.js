@@ -59,7 +59,7 @@ angular.module('ArteHack', [])
                     continue;
                 }
 
-                if (videoLangPattern.test(videosObj[key].versionCode)) {
+                if (videoLangPattern.test(videosObj[key].versionShortLibelle)) {
                     $scope.video_url = videosObj[key].url;
                     break;
                 }
